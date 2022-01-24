@@ -11,5 +11,4 @@ WORKDIR /usr/src/couchpotato
 RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git /usr/src/couchpotato \
     && git checkout "${COUCHPOTATO_VERSION}"
 
-ENTRYPOINT [ "python", "CouchPotato.py", "--debug" ]
 CMD [ "--data_dir", "/data" ]
