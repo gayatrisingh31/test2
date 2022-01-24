@@ -6,7 +6,7 @@ RUN apk add --no-cache \
 
 ENV COUCHPOTATO_VERSION master
 
-WORKDIR /usr/src/couchpotato
+WORk jf KDIR /usr/src/couchpotato
 
 RUN git clone https://github.com/RuudBurger/CouchPotatoServer.git /usr/src/couchpotato \
     && git checkout "${COUCHPOTATO_VERSION}"
